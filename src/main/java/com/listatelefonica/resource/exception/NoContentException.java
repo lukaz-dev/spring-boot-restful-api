@@ -1,4 +1,4 @@
-package com.listatelefonica.exception;
+package com.listatelefonica.resource.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

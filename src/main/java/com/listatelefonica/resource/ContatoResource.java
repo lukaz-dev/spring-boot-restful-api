@@ -1,8 +1,8 @@
-package com.listatelefonica.controller;
+package com.listatelefonica.resource;
 
-import com.listatelefonica.exception.ConflictResourceException;
-import com.listatelefonica.exception.NoContentException;
-import com.listatelefonica.exception.ResourceNotFoundException;
+import com.listatelefonica.resource.exception.ConflictResourceException;
+import com.listatelefonica.resource.exception.NoContentException;
+import com.listatelefonica.resource.exception.ResourceNotFoundException;
 import com.listatelefonica.model.Contato;
 import com.listatelefonica.repository.ContatoRepository;
 import org.slf4j.Logger;
@@ -18,9 +18,9 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/contatos")
-public class ContatoRestController {
+public class ContatoResource {
 
-    public static final Logger logger = LoggerFactory.getLogger(ContatoRestController.class);
+    public static final Logger logger = LoggerFactory.getLogger(ContatoResource.class);
 
     @Autowired
     private ContatoRepository contatoRepository;

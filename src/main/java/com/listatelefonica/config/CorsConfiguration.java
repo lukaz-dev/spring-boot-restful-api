@@ -15,7 +15,7 @@ public class CorsConfiguration {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
-                    .allowedOrigins("https://lukazdev-app.herokuapp.com") // <- configurar acesso https://lukazdev-app.herokuapp.com
+                    .allowedOrigins("https://lukazdev-app.herokuapp.com") // <- configurar acesso
                     .exposedHeaders("Location")
                     .allowedMethods("OPTIONS", "GET", "POST", "PUT", "DELETE")
                     .allowedHeaders("Origin", "Content-Type", "Accept");

@@ -1,8 +1,8 @@
-package com.listatelefonica.controller;
+package com.listatelefonica.resource;
 
-import com.listatelefonica.exception.ConflictResourceException;
-import com.listatelefonica.exception.NoContentException;
-import com.listatelefonica.exception.ResourceNotFoundException;
+import com.listatelefonica.resource.exception.ConflictResourceException;
+import com.listatelefonica.resource.exception.NoContentException;
+import com.listatelefonica.resource.exception.ResourceNotFoundException;
 import com.listatelefonica.model.Operadora;
 import com.listatelefonica.repository.OperadoraRepository;
 import org.slf4j.Logger;
@@ -18,9 +18,9 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/operadoras")
-public class OperadoraRestController {
+public class OperadoraResource {
 
-    public static final Logger logger = LoggerFactory.getLogger(OperadoraRestController.class);
+    public static final Logger logger = LoggerFactory.getLogger(OperadoraResource.class);
 
     @Autowired
     private OperadoraRepository operadoraRepository;
